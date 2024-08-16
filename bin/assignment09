@@ -1,0 +1,82 @@
+void main() {
+//  Q3
+  print(
+      "we dont take a value from a use but we consider if user use the calcultor how they understand to use calcultor easily.");
+  print(
+      "press 1 for addition: press 2 for subtraction: press 3 for divide: press 4 for multi: press 5 for percentage");
+  Map method = {'add': 1, 'subtr': 2, "multi": 3, 'divide': 4, 'percentage': 5};
+  int first = 2;
+  int second = 3;
+  if (method['add'] == 1) {
+    var add = first + second;
+    print(add);
+    if (method['subtr'] == 2) {
+      var subtr = first - second;
+      print(subtr);
+    }
+    if (method['multi'] == 3) {
+      var multi = first * second;
+      print(multi);
+    }
+    if (method['divide'] == 4) {
+      var divide = first / second;
+      print(divide);
+    }
+    if (method['percentage'] == 5) {
+      var percentage = first % second;
+      print(percentage);
+    }
+  }
+// Q4:
+  String name = 'natsikaP nawaj';
+  print(name
+      .split("")
+      .reversed
+      .join()); //simple method first i spilt all data then reversed the and again i join all value
+
+//Q5:
+  List<String> names = [
+    'Ahmed',
+    'Bilal',
+    'Shahzeb Naqvi',
+    'Muhmmad',
+    'Ali',
+    'Abdullah'
+  ];
+  // here is no dublicate value in the list
+  // Q6:
+  List numb = [5, 2, 4, 6, 8, 10, 33, 1];
+  var largenumb = numb[0];
+  var smallnumb = numb[0];
+  for (int i = 0; i < numb.length; i++) {
+    if (numb[i] > largenumb) {
+      largenumb = numb[i];
+    }
+    if (numb[i] < smallnumb) {
+      smallnumb = numb[i];
+    }
+    print(smallnumb);
+    print(largenumb);
+  }
+// Q7
+  String nstd = "danish";
+  List<String> vowel = ['a', 'e', 'i', 'o', 'u'];
+  for (int i = 0; i < vowel.length; i++) {
+    if (vowel[i] != nstd) {
+      //return statement is not working in if condition;
+    }
+  }
+// Q8
+  List<dynamic> _nameList = [
+    "Shahzeb Naqvi",
+    "Abdullah",
+    "Abdullah",
+    "Shahzeb Naqvi",
+    "Abdullah",
+    "Zain"
+  ];
+  var d = _nameList.toSet().toList();
+  d.sort();
+
+  print(d);
+}
