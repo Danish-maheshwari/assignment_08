@@ -79,4 +79,34 @@ void main() {
   d.sort();
 
   print(d);
+  // Q1
+    List numb = [1, 2, 3, 4, 5, 6, 7, 8];
+  numb.add(2);
+  print(numb);
+  numb.addAll([0, 9, 12]);
+  print(numb);
+  numb.sort();
+  print(numb);
+  var dani = numb.reversed;
+  print(dani.toList());
+  numb.remove(9);
+  print(numb);
+  numb.removeRange(2, 3);
+  print(numb);
+  var result = numb.where((x) => x.isEven);
+  print(result);
+  var re = numb.takeWhile((e) => e != 4);
+  print(re);
+  // Q2
+   var data = {'name': 'John Doe', 'occupation': 'gardener'};
+  print('Type: ${data.runtimeType}\nMapValu: $data\nLength: ${data.length}');
+
+  print('Empty: ${data.isEmpty}  \nNotEmpty: ${data.isNotEmpty}');
+  data.addAll({'name1': 'Danish', 'occupation1': 'online work'});
+  print(data);
+  var myMap = {1: 'Apple', 2: 'Orange', 3: 'Banana'};
+  print(myMap.containsKey(1));
+  print(myMap.containsKey(4));
+  print(myMap.containsValue('Apple'));
+  print(myMap.containsValue('Cherry'));
 }
