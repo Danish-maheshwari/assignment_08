@@ -1,4 +1,5 @@
-import 'dart:ffi';
+// import 'dart:ffi';
+// import 'dart:html_common';
 
 void main() {
   // Q1
@@ -110,9 +111,72 @@ void main() {
   final evenNumber = number2.where((x) => x.isEven);
   print('The List of Even Number : $evenNumber');
 // Q17:
-   var b=number2.map(( a) => a * a).toList();
+  var b = number2.map((a) => a * a).toList();
   print(b);
 
 // Q18:
+  Map person = {'name': 'john', 'age': 25, 'isstudent': true};
+  if (person['age'] > 18 && person['isstudent'] == true) {
+    print('the detail of person $person');
+  }
+  // Q19:
+  Map product = {
+    'name': 'iphone 15 ultra pro',
+    'price': 500000,
+    'quantity': 10
+  };
+  if (product['quantity'] > 0) {
+    print("instock");
+  } else {
+    print("out of stock");
+  }
+// Q20:
+  Map car = {'brand': 'Toyota', 'colour': 'Red', 'isSedan': true};
+  if (car['isSedan'] == true && car['colour'] == 'red') {
+    print('Match');
+  } else {
+    print('Not Match');
+  }
+  // Q21:
+  Map<String, dynamic> user = {
+    'name': 'danish',
+    'isAdmin': true,
+    'isActive': true
+  };
 
+  // Check if the user is an active admin
+  if (user['isAdmin'] == true && user['isActive'] == true) {
+    print('Active admin');
+  } else {
+    print('Not an active admin');
+  }
+  // Q22:
+  Map<String, dynamic> shoppingCart = {
+    'productname': 'Samsung',
+    'values': 350000,
+    'quantities': 20
+  };
+
+  // Check if the product "Apple" exists in the cart
+  if (shoppingCart['productname'] == 'Apple') {
+    print('Product found');
+  } else {
+    print('Product not found');
+  }
+// Q23:
+  int number3 = 10;
+  while (number3 >= 1) {
+    print(number3);
+    number3--;
+  }
+// Q24:
+  int n = 1;
+  do {
+    int result = n * n;
+    print('square of values $result');
+    n++;
+  } while (n <= 5);
+
+
+  
 }
