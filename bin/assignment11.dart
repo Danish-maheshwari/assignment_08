@@ -176,7 +176,30 @@ void main() {
     print('square of values $result');
     n++;
   } while (n <= 5);
+  // Q25:
+  List numbers = [1, 2, 3, 6];
+  int a = 0;
+  for (int i = 0; i < numbers.length; i++) {
+    var result = numbers[i] + a;
+    a = result;
+  }
+  double total = a / numbers.length;
+  print('The average of List $total');
+// 26:
+  //you not declare value how to give e.g in list or in sperate how to give value then i understand to find large digit of value;
+  //Q27:
+  int i = 1;
+  do {
+    if (i % 2 == 0) {
+      print('Even number from 1 to 20 = $i');
+    }
+    i++;
+  } while (i <= 20);
+// Q28:
 
 
-  
+
+
 }
+
+
